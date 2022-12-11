@@ -69,9 +69,13 @@ init()
     } if (winner === 't') {
         return messageEl.textContent = "It's a Tie!"
       } if (winner === 1) {
-      return messageEl.textContent = 'Congratulations X won!'
+      return messageEl.textContent = 'Congratulations X won!'  
+      confetti.start(22000)
+
     } if (winner === -1) {
       return messageEl.textContent = 'Congratulations O won!'
+      confetti.start(22000)
+
     } 
   }
   
